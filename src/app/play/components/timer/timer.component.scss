@@ -1,0 +1,27 @@
+.timer-container {
+width: 15.125rem;
+height:auto;
+min-height: 8.875rem;
+padding: 0px 0.5rem;
+border-radius: 0.25rem;
+font-weight: 700;
+background-size: cover;
+font-family: Ubuntu;
+font-size: 8.75rem;
+color: #ffffff;
+text-decoration: none solid rgba(255, 255, 255, 0.8);
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.timer-logo{
+  width:11.25rem;
+  height: 11.25rem;
+  background: url('../../../../assets/icon/logo-timer.png');
+  background-size: cover;
+  margin-left:auto;
+  margin-right:auto;
+
+}

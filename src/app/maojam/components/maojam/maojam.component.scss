@@ -1,0 +1,63 @@
+ion-tab-bar,
+ion-tab-button {
+  background: transparent;
+  border: none;
+}
+ion-tab-bar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.upload-i {
+  width: 2.6875rem;
+  height: 2.6875rem;
+  background: url("../../../../assets/icon/Oval.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease-in;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.rotate-icon {
+  transform: rotate(90deg);
+}
+
+.side-menu {
+  position: absolute;
+  bottom: 4.0625rem;
+  right: 0.5rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  .side-menu-icon {
+    width: 3.125rem;
+    height: 3.125rem;
+    background: url("../../../../assets/icon/Oval.svg");
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    cursor: pointer;
+    img {
+      width: 3.125rem;
+      height: 3.125rem;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .mt-10 {
+    margin-top: 0.625rem;
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "login":{
+  "signin":"Sign In",
+  "email":"E-Mail",
+  "password":"Password",
+  "forgetPassword":"Forget Password",
+  "orloginwith":"or log in with",
+  "newUser":"New User?",
+  "signUp":"Sign Up!",
+  "login":"Log In"
+  },
+  "registration":{
+    "signup":"Sign Up",
+    "firstName":"First Name",
+    "lastName":"Last Name",
+    "email":"E-Mail",
+    "password":"Password",
+    "registerWith":"or register with",
+    "withyourreg":"With your registration you accept our",
+    "termsOfUse":"Terms of use",
+    "privacyPolicy":"privacy policy.",
+    "and":"and",
+    "register":"register",
+    "alreadyHaveAnAccount":"Already have an account?",
+    "signin":"Sign In"
+
+
+  },
+  "common": {
+    "copyright": "2021 Maojam. All rights reserved."
+  }
+}

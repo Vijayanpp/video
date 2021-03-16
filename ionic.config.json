@@ -1,0 +1,7 @@
+{
+  "name": "maojam",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

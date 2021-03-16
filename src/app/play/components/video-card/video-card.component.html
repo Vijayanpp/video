@@ -1,0 +1,17 @@
+<div
+  class="mVideo"
+  [@cardAnimator]="animationState"
+  (@cardAnimator.done)="resetAnimationState($event)"
+  (swipeleft)="startAnimation('swipeleft')"
+  (swiperight)="startAnimation('swiperight')"
+>
+  <video autoplay id="appVideo" poster="../../../../assets/icon/bg.png">
+    <source [src]="currentVideoData.url" type="video/x-m4v" />
+  </video>
+</div>
+
+<ion-progress-bar [value]="progressingValue"></ion-progress-bar>
+
+<div class="countdown-timer-c" *ngIf="!!showCountDown">
+  <app-timer></app-timer>
+</div>

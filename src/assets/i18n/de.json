@@ -1,0 +1,32 @@
+{
+  "login":{
+  "signin":"Sign In-de",
+  "email":"E-Mail-de",
+  "password":"Password-de",
+  "forgetPassword":"Forget Password-de",
+  "orloginwith":"or log in with-de",
+  "newUser":"New User?-de",
+  "signUp":"Sign Up!-de",
+  "login":"Log In-de"
+  },
+  "registration":{
+    "signup":"Sign Up-de",
+    "firstName":"First Name-de",
+    "lastName":"Last Name-de",
+    "email":"E-Mail-de",
+    "password":"Password-de",
+    "registerWith":"or register with-de",
+    "withyourreg":"With your registration you accept our-de",
+    "termsofuse":"Terms of use-de",
+    "privacyPolicy":"privacy policy-de",
+    "and":"and-de",
+    "register":"register-de",
+    "alreadyHaveAnAccount":"Already have an account?-de",
+    "signin":"Sign In-de"
+
+
+  },
+  "common": {
+    "copyright": "2021 Maojam. All rights reserved."
+  }
+}

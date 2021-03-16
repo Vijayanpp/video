@@ -1,0 +1,127 @@
+<ion-content class="login">
+  <header>
+    <div class="logo-c ion-justify-content-center ion-align-items-center">
+      <img src="../../../../assets/icon/logo.png" alt="Maojam" />
+    </div>
+  </header>
+
+  <ion-grid class="mt-66">
+    <form [formGroup]="loginForm" (ngSubmit)="submitLoginForm(loginForm)">
+    <ion-row class="ion-justify-content-center">
+      <ion-col
+        align-self-center
+        class="ion-text-center"
+        size-md="6"
+        size-lg="5"
+        size-xs="12"
+      >
+        <span class="form-title-text"> {{ "login.signin" | translate }}</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center ion-margin">
+      <ion-col
+        class="ion-justify-content-center"
+        align-self-center
+        size-md="6"
+        size-lg="5"
+        size-xs="12"
+      >
+        <ion-input
+          type="email"
+          placeholder="{{ 'login.email' | translate }}"
+          class="input-co"
+          autocomplete="off"
+          formControlName="email"
+        ></ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center mt--10">
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <ion-input
+          type="{{getPasswordType()}}"
+          placeholder="{{ 'login.password' | translate }}"
+          class="input-co"
+          autocomplete="off"
+          formControlName="password"
+        >
+          <span class="reveal" *ngIf="!hasPasswordShown;else hidepassword" (click)="showPassword()"
+            ><img
+              src="../../../../assets/icon/ShowPassword.svg"
+              alt="show password"
+          />
+
+        </span>
+        <ng-template #hidepassword>
+          <span class="reveal" (click)="hidePassword()"
+            ><img
+              src="../../../../assets/icon/ShowPassword.svg"
+              alt="hide password"
+          />
+
+        </span>
+        </ng-template>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col
+        align-self-center
+        class="ion-text-center"
+        size-md="6"
+        size-lg="5"
+        size-xs="12"
+      >
+        <span class="form-footer-text">{{ "login.forgetPassword" | translate }}</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center mt-54">
+      <ion-col
+        align-self-center
+        class="ion-text-center"
+        size-md="6"
+        size-lg="5"
+        size-xs="12"
+      >
+        <span class="login-footer-text">or log in with</span>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div class="social-logo-c">
+          <img src="../../../../assets/icon/facebook.svg" />
+          <img src="../../../../assets/icon/google.svg" />
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center mt-74">
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div class="button-c">
+          <ion-button class="login-btn" type="submit" expand="block" shape="round"
+          >{{ "login.login" | translate }} <span class="arrow"><img src="../../../../assets/icon/arrow.svg"/></span></ion-button>
+
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col
+        align-self-center
+        class="ion-text-center"
+        size-md="6"
+        size-lg="5"
+        size-xs="12"
+      >
+        <span class="new-user">{{ "login.newUser" | translate }}</span><span class="blue-text" [routerLink]="['/registration']">{{ "login.signUp" | translate }}</span>
+      </ion-col>
+    </ion-row>
+
+
+
+    </form>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,29 @@
+.lang-btn {
+  font-size: 1.125rem;
+  font-family: Ubuntu;
+  min-width: 18.125rem;
+  height: 3.125rem;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-transform: none;
+  --box-shadow:'none';
+  --background: var(--ion-theme-color-yellow);
+  --background-hover:var(--ion-theme-color-blue);
+  --color: #000000;
+  background-size: cover;
+}
+
+.logo-c {
+  background: url('../../../../assets/icon/Rectangle.svg');
+  background-size:cover;
+  display: flex;
+  width: 12.0625rem;
+  height: 12.0625rem;
+  img {
+    width:5.4375rem;
+    height: 5.4375rem;
+  }
+}
+
+.mt-66 {
+  margin-top:4.125rem;
+}

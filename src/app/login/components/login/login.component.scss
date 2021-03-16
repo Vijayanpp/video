@@ -1,0 +1,149 @@
+.logo-c {
+  background: url("../../../../assets/icon/Rectangle.svg");
+  background-size: cover;
+  display: flex;
+  width: 12.0625rem;
+  height: 12.0625rem;
+  img {
+    width: 5.4375rem;
+    height: 5.4375rem;
+  }
+}
+
+.input-co {
+  width: 18.3125rem;
+  height: 2.5rem;
+  padding: 0rem 0.5rem 0rem 1.25rem;
+  border: 0.0625rem solid #8c8c8c;
+  border-radius: 6.25rem;
+  --background: #ffffff;
+  background-size: cover;
+  font-family: Ubuntu;
+  font-size: 1rem;
+  color: #121212;
+  text-decoration: none solid rgb(18, 18, 18);
+  margin: 0 auto;
+  padding-left: 0.8rem;
+  position: relative;
+  .reveal {
+    position: absolute;
+    right: 1rem;
+    top: 0.4rem;
+    cursor: pointer;
+    transition: all 1s;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.form-title-text {
+  display: inline-block;
+  width: 178px;
+  height: 28px;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #009fe3;
+  text-decoration: none solid rgb(0, 159, 227);
+  text-align: center;
+}
+
+.form-footer-text {
+  font-family: Ubuntu;
+  font-size: 0.75rem;
+  color: #4f4f4f;
+  text-decoration: none solid rgb(79, 79, 79);
+  cursor: pointer;
+  &:hover {
+    color: var(--ion-theme-color-blue);
+  }
+}
+
+.login-footer-text {
+  font-family: Ubuntu;
+  font-size: 1.125rem;
+  color: var(--ion-theme-color-blue);
+  text-decoration: none solid rgb(0, 159, 227);
+  text-align: center;
+}
+
+.social-logo-c,
+.button-c {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  img {
+    cursor: pointer;
+    transition: all 1s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+}
+
+.login-btn {
+  font-size: 1rem;
+  font-family: Ubuntu;
+  min-width: 8.125rem;
+  height: 2.5rem;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-transform: none;
+  --box-shadow: "none";
+  --background: #666666;
+  --background-hover: var(--ion-theme-color-blue);
+  --color: var(--ion-color-primary-contrast);
+  background-size: cover;
+  position:relative;
+  .arrow{
+    position:absolute;
+    right: -0.7rem;
+    top: 0.7rem;
+  }
+}
+
+.blue-text {
+  color: var(--ion-theme-color-blue);
+  font-size: 0.875rem;
+  text-decoration: none solid rgb(79, 79, 79);
+  text-align: center;
+  margin-left:0.5rem;
+}
+
+.new-user {
+  font-size: 0.875rem;
+  color: #4f4f4f;
+  text-decoration: none solid rgb(79, 79, 79);
+  text-align: center;
+}
+
+.new-user,
+.blue-text {
+  text-align: center;
+  cursor: pointer;
+}
+.mt--10 {
+  margin-top: -1rem;
+}
+
+.mt-66 {
+  margin-top: 4.125rem;
+}
+
+.mt-54 {
+  margin-top: 3.375rem;
+}
+
+.mt-74{
+  margin-top:4.625rem;
+}
+
+
+@media (min-width: 1000px) {
+  .mt-54 {
+    margin-top: 2rem;
+  }
+}

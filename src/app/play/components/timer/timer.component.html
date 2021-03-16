@@ -1,0 +1,12 @@
+<div class="timer-container">
+  <countdown
+    [config]="{ leftTime: 4, format: 's' }"
+    (event)="handleEvent($event)"
+    *ngIf="isTimerShowing; else logo"
+  ></countdown>
+  <ng-template #logo>
+    <div
+      class="timer-logo animate__animated animate__slideInRight animate__fast"
+    ></div>
+  </ng-template>
+</div>

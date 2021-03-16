@@ -1,0 +1,174 @@
+<ion-content class="registration">
+  <header>
+    <div class="logo-c ion-justify-content-center ion-align-items-center">
+      <img src="../../../../assets/icon/logo.png" alt="Maojam" />
+    </div>
+  </header>
+
+  <ion-grid class="mt-66">
+    <form
+      [formGroup]="registrationForm"
+      (ngSubmit)="submitRegistrationForm(registrationForm)"
+    >
+      <ion-row class="ion-justify-content-center">
+        <ion-col
+          align-self-center
+          class="ion-text-center"
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <span class="form-title-text">{{ "registration.signup" | translate }}</span>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center ion-margin">
+        <ion-col
+          class="ion-justify-content-center"
+          align-self-center
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <ion-input
+            type="text"
+            placeholder="{{ 'registration.firstName' | translate }}"
+            class="input-co"
+            autocomplete="off"
+            formControlName="firstName"
+          ></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center ion-margin">
+        <ion-col
+          class="ion-justify-content-center"
+          align-self-center
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <ion-input
+            type="text"
+            placeholder="{{ 'registration.lastName' | translate }}"
+            class="input-co"
+            autocomplete="off"
+            formControlName="lastName"
+          ></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center ion-margin">
+        <ion-col
+          class="ion-justify-content-center"
+          align-self-center
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <ion-input
+            type="email"
+            placeholder="{{ 'registration.email' | translate }}"
+            class="input-co"
+            autocomplete="off"
+            formControlName="email"
+          ></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center mt--10">
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <ion-input
+            type="{{ getPasswordType() }}"
+            placeholder="{{ 'registration.password' | translate }}"
+            class="input-co"
+            autocomplete="off"
+            formControlName="password"
+          >
+            <span
+              class="reveal"
+              *ngIf="!hasPasswordShown; else hidepassword"
+              (click)="showPassword()"
+              ><img
+                src="../../../../assets/icon/ShowPassword.svg"
+                alt="show password"
+              />
+            </span>
+            <ng-template #hidepassword>
+              <span class="reveal" (click)="hidePassword()"
+                ><img
+                  src="../../../../assets/icon/ShowPassword.svg"
+                  alt="hide password"
+                />
+              </span>
+            </ng-template>
+          </ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center mt-13">
+        <ion-col
+          align-self-center
+          class="ion-text-center"
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <span class="registration-footer-text">{{ "registration.registerWith" | translate }}</span>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div class="social-logo-c">
+            <img src="../../../../assets/icon/facebook.svg" />
+            <img src="../../../../assets/icon/google.svg" />
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col class="flex">
+          <div class="check-c">
+          <input type="checkbox" class="checkbox" />
+        </div>
+        <div class="flex-v p-text ml-10">
+          <span>
+            {{ 'registration.withyourreg' | translate }}</span>
+            <span>
+            <a href="javascript:void(0)" class="nav-a">  {{ "registration.termsOfUse" | translate }}</a> and
+            <a href="javascript:void(0)" class="nav-a"> {{ "registration.privacyPolicy" | translate }}</a>.
+          </span>
+        </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div class="button-c">
+            <ion-button
+              class="registration-btn"
+              type="submit"
+              expand="block"
+              shape="round"
+              > {{ "registration.register" | translate }}
+              <span class="arrow"
+                ><img src="../../../../assets/icon/arrow.svg" /></span
+            ></ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-justify-content-center">
+        <ion-col
+          align-self-center
+          class="ion-text-center"
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <span class="new-user"> {{ "registration.alreadyHaveAnAccount" | translate }}</span
+          ><span class="blue-text" [routerLink]="['/login']">{{ "registration.signin" | translate }}</span>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>
